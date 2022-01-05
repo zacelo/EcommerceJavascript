@@ -16,12 +16,11 @@ class Comida {
     //Metodo para cuando carga la pagina, se muestren los productos
     mostrar() {
       const rowMostrar = document.createElement("div");
-      rowMostrar.classList.add("col-sm-6","col-lg-4","my-3","all",this.categoria);
-      cargarProductos.appendChild(rowMostrar);
+      rowMostrar.classList.add("col-sm-6","col-lg-4","all",this.categoria);      
       rowMostrar.innerHTML = `<div class="box">
-                                   <div>
-                                        <div class="img-box">
-                                            <img src="${this.imagen}" alt="">
+                                   <div >
+                                        <div class="img-box ">
+                                            <img src="${this.imagen}" alt="" class="producto">
                                         </div>
                                         <div class="detail-box ">
                                             <h5 class="mb-2">${this.nombre} </h5>
@@ -33,6 +32,7 @@ class Comida {
                                         </div>
                                     </div>
                                 </div>`;
+        cargarProductos.appendChild(rowMostrar);
         const verMas = document.getElementById('boton'+this.id)
         verMas.addEventListener('click', ()=>{
         mostrarDescripcion(this.id);

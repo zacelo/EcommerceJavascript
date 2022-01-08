@@ -817,6 +817,7 @@ a:focus {
 
 .client_section .box .detail-box {
   background-color: #222831;
+  min-height: 180px;
   color: #ffffff;
   padding: 25px 25px 15px 25px;
   border-radius: 5px;

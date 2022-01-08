@@ -44,17 +44,21 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container fixed-top bg-dark ">
           <div class="ms-lg-5"></div>
-          <div class="ms-lg-5"></div>
          
-          <a class="navbar-brand m-2 ms-5" href="#inicio">
-            <span >
-              Chivo's
-            </span>
-          </a>
-          <button class="btn btn-warning ms-3 rounded-pill  border border-3 position-relative btnMostrarCarrito"data-toggle="modal" data-target="#mostraCarrito">
-              <i class="bi bi-cart3 h4  "></i>
-                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger "id="carro">
-         </button>
+          <img src="imagenes/logo1.png" alt="" class="ms-1 ms-md-5">
+            <a class="navbar-brand m-1 ms-1 ms-md-3" href="#inicio">
+            
+              <span >
+                Chivo's
+              </span>
+            </a>
+           
+           
+            <button class="btn btn-warning ms-1 ms-md-5 rounded-pill  border border-3 position-relative btnMostrarCarrito"data-toggle="modal" data-target="#mostraCarrito">
+                <i class="bi bi-cart3 h4  "></i>
+                  <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger "id="carro">
+            </button>
+         
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="">nn </span>
           </button>
@@ -172,10 +176,8 @@
                 <img src="imagenes/o1.jpg" alt="">
               </div>
               <div class="detail-box">
-                <h5> Lunes de hamurguesas</h5>
-                <h6>
-                  <span>20%</span> Off
-                </h6>
+                <h5> Miércoles de hamurguesas</h5>
+                <h6><span>10%</span> Off </h6>
                 <a href="#menu"> Ordenar ahora <i class="fa fa-shopping-cart ms-2 fs-5"></i></a>
               </div>
             </div>
@@ -186,8 +188,8 @@
                 <img src="imagenes/o2.jpg" alt="">
               </div>
               <div class="detail-box">
-                <h5>Jueves de Pizza</h5>
-                <h6><span>15%</span> DESC</h6>
+                <h5>Viernes de Pizza</h5>
+                <h6><span>20%</span> Off </h6>
                 <a href="#menu">Ordenar ahora<i class="fa fa-shopping-cart ms-2 fs-5"></i> </a>
               </div>
             </div>
@@ -241,15 +243,18 @@
             
          </div>
          <div class="modal-footers bg-dark ">
-             <div class="text-center  d-flex justify-content-center align-items-center col-12 col-lg-6">
-                 <i class="bi bi-arrow-left-circle-fill fs-2 btn text-warning " id="bajar"></i>
-                 <h5 class="align-self-center border py-1 px-3 text-white" id="cantidad"> 1</h5>
-                 <i class="bi bi-arrow-right-circle-fill fs-2 btn text-warning " id="subir" ></i>
+             <div class=" d-flex justify-content-between align-items-center col-12 ">
+                 <div  class="d-flex">
+                   <i class="bi bi-arrow-left-circle-fill fs-2 btn text-warning " id="bajar"></i>
+                   <h5 class="align-self-center border py-1 px-3 text-white" id="cantidad"> 1</h5>
+                   <i class="bi bi-arrow-right-circle-fill fs-2 btn text-warning " id="subir" ></i>
+                 </div>
+                <div >
+                  <button type="button" class="btn btn-danger px-4 fs-6 mt-2 mt-sm-0" data-dismiss="modal">Cerrar</button>
+                  <button type="button" id="cargarCarrito" class="btn btn-warning fs-6 mt-2 mt-sm-0" data-dismiss="modal"  >Cargar<i class="bi bi-cart-dash-fill ms-2"></i></button>
+                </div>    
              </div>
-             <div class="col-12 col-lg-5 text-end ">
-                 <button type="button" class="btn btn-light px-4 fs-6 " data-dismiss="modal">Cerrar</button>
-                 <button type="button" id="cargarCarrito" class="btn btn-warning fs-6 " data-dismiss="modal"  >Cargar<i class="bi bi-cart-dash-fill ms-2"></i></button>
-             </div>             
+                     
          </div>         
      </div>
  </div>
@@ -341,23 +346,28 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="index.html">
+            <form id="formComentario">
               <div>
-                <input type="text" class="form-control" placeholder="Nombre....." />
+                <input type="text" class="form-control" placeholder="Nombre....." name="nombre" required maxlength="40" id="nombre"/>
+              </div>           
+              
+             <div>
+              <h2>Cuantas estrellas nos das</h2>               
+              <select name="estrellas" class="form-control w-25" id="estrellas" required>
+                <option value="5" selected>5</option>
+                <option value="4" >4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+             </div>
+              
+              <div>
+                <textarea name="comentario" rows="5"  id="comentario" class="form-control " placeholder="Comentario....." required maxlength="250"></textarea>
               </div>
-            
               <div>
-                <input type="email" class="form-control" placeholder="Email....." />
-              </div>
-             
-              <div>
-                <input type="date" class="form-control">
-              </div>
-              <div>
-                <textarea name="comentario" rows="15"  id="comentario" class="form-control" placeholder="Comentario....."></textarea>
-              </div>
-              <div>
-                <input type="submit" name="btn_comentarios" id="comentarios" class="btn btn-warning text-white rounded-pill px-4 py-2 lead" value="Publicar comentario">
+                <button type="submit" id="formComentario"class="btn btn-warning text-white rounded-pill px-4 py-2 ">Publicar comentario</button>
+                
               </div>
             </form>
           </div>
@@ -385,51 +395,19 @@
           Últimos comentarios
         </h2>
       </div>
-      <div class="carousel-wrap row ">
-        <div class="owl-carousel client_owl-carousel">
-          <div class="item">
-            <div class="box">
-              <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Moana Michell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
-              </div>
-              <div class="img-box">
-                <img src="imagenes/client1.jpg" alt="" class="box-img">
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Mike Hamell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
-              </div>
-              <div class="img-box">
-                <img src="imagenes/client2.jpg" alt="" class="box-img">
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class=" row testimonios">
+          
+          
+         <!--  Se cargan los testimonios por javascript -->
+         
+       
+         
       </div>
     </div>
   </section>
 
   <!-- end client section -->
-
+ 
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
@@ -508,7 +486,7 @@
     </div>
   </footer>
   <!-- footer section -->
-
+  <script type="text/javascript" src="js/comentarios.js"></script>
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
@@ -518,8 +496,7 @@
   <script src="js/bootstrap.js"></script>
   
   <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
   <!-- isotope js -->
   <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
   <!-- nice select -->
@@ -530,6 +507,7 @@
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <!-- End Google Map -->
+  
   <script type="text/javascript" src="js/carrito.js"></script> 
   <script type="text/javascript" src="js/descripcion.js"> </script> 
   <script type="text/javascript" src="js/cantidad.js"> </script>  

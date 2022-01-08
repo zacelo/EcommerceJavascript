@@ -53,5 +53,23 @@
       "descripcion":"Chivito al plato para dos, super cpmpleto, puede ser de carne o de pollo, con jamon, queso, panceta, 2 huevos fritos, papas fritas, ensalada rusa, tomate lechuga y pickles.",
       "cantidad": 1,
       "categoria": "chivitos"
-    }
+    },
+    {
+      "id": 7,
+      "nombre": "Milanesa Napolitana",
+      "precio": 250,
+      "imagen": "imagenes/mila-napo.jpg",
+      "descripcion":"Milanesa de carne/pollo con jamon, queso muzarella, rodajas de tomate, oregano. Acompañado de papas fritas ",
+      "cantidad": 1,
+      "categoria": "milanesas"
+    },
+    {
+      "id": 8,
+      "nombre": "Hamburguesa completa",
+      "precio": 210,
+      "imagen": "imagenes/hambur-comple.jpg",
+      "descripcion":"Hamburguesa completa, doble/triple/cuadruple, con jamon, queso chedar , panceta, huevo frito, tomate fresco y lechuga, con aderezos a elección",
+      "cantidad": 1,
+      "categoria": "pizzas"
+    }    
   ]

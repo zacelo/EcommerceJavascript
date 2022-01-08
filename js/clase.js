@@ -15,6 +15,7 @@ class Comida {
     }
     //Metodo para cuando carga la pagina, se muestren los productos
     mostrar() {
+      
       const rowMostrar = document.createElement("div");
       rowMostrar.classList.add("col-sm-6","col-lg-4","all",this.categoria);      
       rowMostrar.innerHTML = `<div class="box">

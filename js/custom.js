@@ -44,7 +44,7 @@ function myMap() {
 }
 
 // client section owl carousel
-$(".client_owl-carousel").owlCarousel({
+/* $(".client_owl-carousel").owlCarousel({
     loop: true,
     margin: 0,
     dots: false,
@@ -67,4 +67,4 @@ $(".client_owl-carousel").owlCarousel({
             items: 2
         }
     }
-});
+}); */

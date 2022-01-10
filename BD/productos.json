@@ -6,7 +6,7 @@
       "imagen": "imagenes/mila-napo.jpg",
       "descripcion":"Milanesa de carne/pollo con jamon, queso muzarella, rodajas de tomate, oregano. Acompañado de papas fritas ",
       "cantidad": 1,
-      "categoria": "milanesas"
+      "categoria": "Milanesas"
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "imagen": "imagenes/hambur-comple.jpg",
       "descripcion":"Hamburguesa completa, doble/triple/cuadruple, con jamon, queso chedar , panceta, huevo frito, tomate fresco y lechuga, con aderezos a elección",
       "cantidad": 1,
-      "categoria": "pizzas"
+      "categoria": "Hamburguesas"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "descripcion":
         "Chivito al pan, carne de lomo de primera super tierna, con jamon, queso , panceta y huevo frito, mas aderezos a elección, acompañado con papas fritas ",
       "cantidad": 1,
-      "categoria": "chivitos"
+      "categoria": "Chivitos"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "imagen": "imagenes/pizza-mozarella.jpg",
       "descripcion":"Pizza muzarella grande, familiar, 8 porciones , para compartir, con salsa de tomate, queso muzarella y aceitunas",
       "cantidad": 1,
-      "categoria": "pizzas"
+      "categoria": "Pizzas"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "imagen": "imagenes/mila-fritas.jpg",
       "descripcion":"Milanesa de carne/pollo , finamente rebozada, acompañada de papas fritas ",
       "cantidad": 1,
-      "categoria": "pizzas"
+      "categoria": "Milanesas"
     },
     {
       "id": 6,
@@ -52,24 +52,6 @@
       "imagen": "imagenes/chivito-plato.jpg",
       "descripcion":"Chivito al plato para dos, super cpmpleto, puede ser de carne o de pollo, con jamon, queso, panceta, 2 huevos fritos, papas fritas, ensalada rusa, tomate lechuga y pickles.",
       "cantidad": 1,
-      "categoria": "chivitos"
-    },
-    {
-      "id": 7,
-      "nombre": "Milanesa Napolitana",
-      "precio": 250,
-      "imagen": "imagenes/mila-napo.jpg",
-      "descripcion":"Milanesa de carne/pollo con jamon, queso muzarella, rodajas de tomate, oregano. Acompañado de papas fritas ",
-      "cantidad": 1,
-      "categoria": "milanesas"
-    },
-    {
-      "id": 8,
-      "nombre": "Hamburguesa completa",
-      "precio": 210,
-      "imagen": "imagenes/hambur-comple.jpg",
-      "descripcion":"Hamburguesa completa, doble/triple/cuadruple, con jamon, queso chedar , panceta, huevo frito, tomate fresco y lechuga, con aderezos a elección",
-      "cantidad": 1,
-      "categoria": "pizzas"
+      "categoria": "Chivitos"
     }    
   ]

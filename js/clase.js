@@ -14,11 +14,10 @@ class Comida {
       this.categoria = plato.categoria;
     }
     //Metodo para cuando carga la pagina, se muestren los productos
-    mostrar() {
-      
+    mostrar() {      
       const rowMostrar = document.createElement("div");
       rowMostrar.classList.add("col-sm-6","col-lg-4","all",this.categoria);         
-      rowMostrar.innerHTML = `<div class="box">
+      rowMostrar.innerHTML = `<div class="box animate__animated animate__zoomIn">
                                    <div >
                                         <div class="img-box ">
                                             <img src="${this.imagen}" alt="" class="producto">
@@ -53,7 +52,7 @@ class Comida {
                                         <h3 class="card-title mb-4" id="categoria">${this.nombre}</h3>
                                         <p>${this.descripcion}</p> 
                                       </div>                                        
-                                          <p class="lead fs-4 "> Precio: <span class=" fw-bold">$${this.precio }</span> </p> 
+                                          <p class="lead fs-4 "> Precio: <span class=" fw-bold">$${this.precio }</span> </p>                                           
                                           <p id="idDescripcion" hidden class="lead fs-4 ">${this.id}</p>
                                           <p id="cantidadDescripcion" hidden class="lead fs-4 ">${this.cantidad}</p>                                                
                                     </div>
@@ -67,11 +66,24 @@ class Comida {
   });   
   if (existe == undefined) {
     agregarCarrito.push({id: this.id,nombre:this.nombre, categoria: this.categoria, precio: this.precio, imagen: this.imagen, cantidad: this.cantidad});
+
+    Toastify({
+      text: "Producto agregado",
+      duration: 1500,  
+      gravity: "center",
+      position: "right",     
+      style: {
+        background: "linear-gradient(to right, #4ad32f, #037030",
+      },   
+    }).showToast();
+
     carro.textContent = agregarCarrito.length;
   } else {
     existe.cantidad += parseInt(cantidadItems.innerText)
   }
   localStorage.setItem('lista',JSON.stringify(agregarCarrito))
+
+  
 }
 //Metodo para mostrar carrito
 mostrarCarrito() {

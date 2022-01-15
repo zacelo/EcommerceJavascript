@@ -5,6 +5,10 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+#seccionProducotos{ 
+  min-height: 700px;
+ 
+}
 .producto{
   border-radius: 10px 10px 0 65px;
   width: 100%;
@@ -733,8 +737,20 @@ a:focus {
 .book_section .form_container .nice-select .current {
   font-size: 16px;
 }
-
-.book_section .form_container button {
+.cerrar{
+  margin-top: 15px;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+.book_section .form_container .boton {
   margin-top: 15px;
   border: none;
   text-transform: uppercase;

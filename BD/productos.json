@@ -1,57 +1,193 @@
 [
     {
       "id": 1,
-      "nombre": "Milanesa Napolitana",
-      "precio": 250,
-      "imagen": "imagenes/mila-napo.jpg",
-      "descripcion":"Milanesa de carne/pollo con jamon, queso muzarella, rodajas de tomate, oregano. Acompañado de papas fritas ",
-      "cantidad": 1,
-      "categoria": "Milanesas"
-    },
-    {
-      "id": 2,
-      "nombre": "Hamburguesa completa",
-      "precio": 210,
-      "imagen": "imagenes/hambur-comple.jpg",
-      "descripcion":"Hamburguesa completa, doble/triple/cuadruple, con jamon, queso chedar , panceta, huevo frito, tomate fresco y lechuga, con aderezos a elección",
-      "cantidad": 1,
-      "categoria": "Hamburguesas"
-    },
-    {
-      "id": 3,
-      "nombre": "Chivito al pan",
-      "precio": 240,
-      "imagen": "imagenes/chivito-pan2.jpg",
-      "descripcion":
-        "Chivito al pan, carne de lomo de primera super tierna, con jamon, queso , panceta y huevo frito, mas aderezos a elección, acompañado con papas fritas ",
-      "cantidad": 1,
-      "categoria": "Chivitos"
-    },
-    {
-      "id": 4,
       "nombre": "Pizza con muzarella",
       "precio": 180,
-      "imagen": "imagenes/pizza-mozarella.jpg",
+      "imagen": "imagenes/productos/pizza-mozarella.jpg",
       "descripcion":"Pizza muzarella grande, familiar, 8 porciones , para compartir, con salsa de tomate, queso muzarella y aceitunas",
       "cantidad": 1,
       "categoria": "Pizzas"
     },
     {
+      "id": 2,
+      "nombre": "Pizza con anana",
+      "precio": 250,
+      "imagen": "imagenes/productos/pizza-anana.png",
+      "descripcion":"Pizza jamon y ananá grande, familiar, 8 porciones , para compartir, con salsa de tomate y queso muzarella",
+      "cantidad": 1,
+      "categoria": "Pizzas"
+    },
+    {
+      "id": 3,
+      "nombre": "Pizza fugazzeta",
+      "precio": 230,
+      "imagen": "imagenes/productos/pizza-fugazzeta.png",
+      "descripcion":"Pizza fugazzeta, familiar, 8 porciones , para compartir, con salsa de tomate, queso muzarella y aceitunas y cebollas cortadas en juliana",
+      "cantidad": 1,
+      "categoria": "Pizzas"
+    },
+    {
+      "id": 4,
+      "nombre": "Pizza jamon y morrones",
+      "precio": 260,
+      "imagen": "imagenes/productos/pizza-jamon-morrones.png",
+      "descripcion":"Pizza jamon y morrones, familiar, 8 porciones , para compartir, con salsa de tomate, queso muzarella y aceitunas",
+      "cantidad": 1,
+      "categoria": "Pizzas"
+    },
+    {
       "id": 5,
+      "nombre": "Pizza lomito y huevo duro",
+      "precio": 240,
+      "imagen": "imagenes/productos/pizza-lomito-huevo.png",
+      "descripcion":"Pizza lomito y huevo duro, familiar, 8 porciones , para compartir, con salsa de tomate y  queso muzarella ",
+      "cantidad": 1,
+      "categoria": "Pizzas"
+    },
+    {
+      "id": 6,
+      "nombre": "Pizza napolitana",
+      "precio": 230,
+      "imagen": "imagenes/productos/pizza-napo.png",
+      "descripcion":"Pizza napolitana, familiar, 8 porciones , para compartir, con salsa de tomate, queso muzarella rodajas de tomate, aceitunas y oregano",
+      "cantidad": 1,
+      "categoria": "Pizzas"
+    },
+    {
+      "id": 7,
+      "nombre": "Pizza con panzeta",
+      "precio": 255,
+      "imagen": "imagenes/productos/pizza-panzeta.png",
+      "descripcion":"Pizza con panzeta, familiar, 8 porciones , para compartir, con salsa de tomate, queso muzarella y aceitunas",
+      "cantidad": 1,
+      "categoria": "Pizzas"
+    },
+    {
+      "id": 8,
+      "nombre": "Pizza pepperoni",
+      "precio": 255,
+      "imagen": "imagenes/productos/pizza-pepperoni.png",
+      "descripcion":"Pizza pepperonis, familiar, 8 porciones , para compartir, con salsa de tomate, queso muzarella y y finas rodajas de pepperoni",
+      "cantidad": 1,
+      "categoria": "Pizzas"
+    },
+    {
+      "id": 20,
+      "nombre": "Chivito al pan completo",
+      "precio": 320,
+      "imagen": "imagenes/productos/chivito-pan-completo.jpg",
+      "descripcion":"Chivito al pan, carne de lomo de primera super tierna, con jamon, queso , panceta, huevo frito, tomate y lechuga mas aderezos a elección, acompañado con papas fritas ",
+      "cantidad": 1,
+      "categoria": "Chivitos"
+    }, 
+    {
+      "id": 21,
+      "nombre": "Chivito al pan comun",
+      "precio": 280,
+      "imagen": "imagenes/productos/chivo-comun.png",
+      "descripcion":"Chivito al pan, carne de lomo de primera super tierna, con tomate y lechuga, mas aderezos a elección, acompañado con papas fritas ",
+      "cantidad": 1,
+      "categoria": "Chivitos"
+    },
+    {
+      "id": 22,
+      "nombre": "Chivito al plato p/1",
+      "precio": 350,
+      "imagen": "imagenes/productos/chivo-plato-uno.png",
+      "descripcion":"Chivito al plato para uno, super completo, puede ser de carne o de pollo, con jamon, queso, panceta, huevo frito, papas fritas, ensalada rusa, tomate lechuga y pickles.",
+      "cantidad": 1,
+      "categoria": "Chivitos"
+    },
+    {
+      "id": 23,
+      "nombre": "Chivito al plato p/2",
+      "precio": 550,
+      "imagen": "imagenes/productos/chivito-plato-dos.jpg",
+      "descripcion":"Chivito al plato para dos, super completo, puede ser de carne o de pollo, con jamon, queso, panceta, 2 huevos fritos, papas fritas, ensalada rusa, tomate lechuga y pickles.",
+      "cantidad": 1,
+      "categoria": "Chivitos"
+    },
+    {
+      "id": 40,
+      "nombre": "Hamburguesa completa",
+      "precio": 250,
+      "imagen": "imagenes/productos/hambur-comple.jpg",
+      "descripcion":"Hamburguesa completa, doble/triple/cuadruple, con jamon, queso chedar , panceta, huevo frito, tomate fresco y lechuga, con aderezos a elección",
+      "cantidad": 1,
+      "categoria": "Hamburguesas"
+    },
+    {
+      "id": 41,
+      "nombre": "Hamburguesa comun",
+      "precio": 210,
+      "imagen": "imagenes/productos/hamburguesa-comun.png",
+      "descripcion":"Hamburguesa comun, tomate fresco y lechuga, con aderezos a elección",
+      "cantidad": 1,
+      "categoria": "Hamburguesas"
+    },
+    {
+      "id": 42,
+      "nombre": "Hamburguesa al plato",
+      "precio": 240,
+      "imagen": "imagenes/productos/hamburguesa-plato-papas.png",
+      "descripcion":"2 Hamburguesas al plato caseras, con papas fritas o rusticas",
+      "cantidad": 1,
+      "categoria": "Hamburguesas"
+    },
+    
+    {
+      "id": 60,
       "nombre": "Milanesa con papas fritas",
       "precio": 215,
-      "imagen": "imagenes/mila-fritas.jpg",
+      "imagen": "imagenes/productos/mila-fritas.jpg",
       "descripcion":"Milanesa de carne/pollo , finamente rebozada, acompañada de papas fritas ",
       "cantidad": 1,
       "categoria": "Milanesas"
     },
     {
-      "id": 6,
-      "nombre": "Chivito al plato p/2",
-      "precio": 550,
-      "imagen": "imagenes/chivito-plato.jpg",
-      "descripcion":"Chivito al plato para dos, super cpmpleto, puede ser de carne o de pollo, con jamon, queso, panceta, 2 huevos fritos, papas fritas, ensalada rusa, tomate lechuga y pickles.",
+      "id": 61,
+      "nombre": "Milanesa Napolitana",
+      "precio": 250,
+      "imagen": "imagenes/productos/mila-napo.jpg",
+      "descripcion":"Milanesa de carne/pollo con jamon, queso muzarella, rodajas de tomate, oregano. Acompañada de papas fritas ",
       "cantidad": 1,
-      "categoria": "Chivitos"
-    }    
+      "categoria": "Milanesas"
+    },    
+    {
+      "id": 62,
+      "nombre": "Milanesa a caballo",
+      "precio": 255,
+      "imagen": "imagenes/productos/mila-caballo.png",
+      "descripcion":"Milanesa de carne/pollo con 2 huevos a caballo. Acompañada de papas fritas ",
+      "cantidad": 1,
+      "categoria": "Milanesas"
+    },
+    {
+      "id": 63,
+      "nombre": "Milanesa al pan comun",
+      "precio": 200,
+      "imagen": "imagenes/productos/mila-comun-pan.png",
+      "descripcion":"Milanesa de carne/pollo con tomate  lechuga, mas aderezos a elección",
+      "cantidad": 1,
+      "categoria": "Milanesas"
+    },
+    {
+      "id": 64,
+      "nombre": "Milanesa al pan completa",
+      "precio": 240,
+      "imagen": "imagenes/productos/mila-completa-pan.png",
+      "descripcion":"Milanesa de carne/pollo con jamon, queso, panzeta, cheddar, tomate  lechuga, mas aderezos a elección. Acompañada de papas fritas",
+      "cantidad": 1,
+      "categoria": "Milanesas"
+    },
+    {
+      "id": 65,
+      "nombre": "Milanesa completa en dos panes",
+      "precio": 320,
+      "imagen": "imagenes/productos/mila-completa-dospanes.png",
+      "descripcion":"Milanesa de carne/pollo con jamon, queso muzarella, tomate, lechuga en dos panes. Acompañado de papas fritas ",
+      "cantidad": 1,
+      "categoria": "Milanesas"
+    }       
+   
   ]

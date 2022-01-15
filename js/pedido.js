@@ -4,17 +4,15 @@ const pedido          = document.querySelector('#pedido'),
       direccion       = document.querySelector('#direccion'),      
       coordenadas     = document.getElementById('coordenadas')
 
-      
+//Al hacer click en pedido se recorre el array del carrito y se lo formatea para enviar el mensaje por whatsApp
 pedido.addEventListener('click',()=>{     
     pedido.href = ''
     let ped = ''
     let sumar = 0
     for(let i of agregarCarrito){
       sumar += i.precio * i.cantidad
-      ped += '%0A'+i.cantidad +' - ' +i.categoria
-     
-    }
-    
+      ped += '%0A'+i.cantidad +' - ' +i.nombre     
+    }    
     pedido.href = `https://wa.me/59894762076/?text=*PEDIDO DESDE WEB*
                           ${ped}
                           %0A *OBSERVACIONES:*
@@ -24,5 +22,13 @@ pedido.addEventListener('click',()=>{
                           %0A${direccion.value}
                           %0A*UBICACION:*
                           %0A${coordenadas.textContent}`
-   
+  //se limpia todo el carrito y el LocalStorage      
+  localStorage.removeItem('lista');
+  carro.textContent = 0;
+  agregarCarrito=[]
+  mostrarCarrito.innerHTML=""; 
+  pedido.classList.add('disabled')
+  total.textContent = "TOTAL $"
+ //se cierra el modal
+  $('#mostraCarrito').modal('hide');
  })

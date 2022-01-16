@@ -1,8 +1,8 @@
 'use strict'
 const pedido          = document.querySelector('#pedido'),
       observaciones   = document.querySelector('#observaciones'),     
-      direccion       = document.querySelector('#direccion'),      
-      coordenadas     = document.getElementById('coordenadas')
+      direccion       = document.querySelector('#direccion');      
+     
 
 //Al hacer click en pedido se recorre el array del carrito y se lo formatea para enviar el mensaje por whatsApp
 pedido.addEventListener('click',()=>{     
@@ -31,4 +31,4 @@ pedido.addEventListener('click',()=>{
   total.textContent = "TOTAL $"
  //se cierra el modal
   $('#mostraCarrito').modal('hide');
- })
+ });

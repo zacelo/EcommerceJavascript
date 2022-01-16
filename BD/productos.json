@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "nombre": "Pizza jamon y morrones",
+      "nombre": "Pizza jamón y morrones",
       "precio": 260,
       "imagen": "imagenes/productos/pizza-jamon-morrones.png",
       "descripcion":"Pizza jamon y morrones, familiar, 8 porciones , para compartir, con salsa de tomate, queso muzarella y aceitunas",
@@ -112,13 +112,13 @@
       "nombre": "Hamburguesa completa",
       "precio": 250,
       "imagen": "imagenes/productos/hambur-comple.jpg",
-      "descripcion":"Hamburguesa completa, doble/triple/cuadruple, con jamon, queso chedar , panceta, huevo frito, tomate fresco y lechuga, con aderezos a elección",
+      "descripcion":"Hamburguesa completa, doble/triple/cuadruple, con jamón, queso chedar , panceta, huevo frito, tomate fresco y lechuga, con aderezos a elección",
       "cantidad": 1,
       "categoria": "Hamburguesas"
     },
     {
       "id": 41,
-      "nombre": "Hamburguesa comun",
+      "nombre": "Hamburguesa común",
       "precio": 210,
       "imagen": "imagenes/productos/hamburguesa-comun.png",
       "descripcion":"Hamburguesa comun, tomate fresco y lechuga, con aderezos a elección",

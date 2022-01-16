@@ -10,20 +10,16 @@ let agregarCarrito = JSON.parse(localStorage.getItem("lista"));
 
 //En caso de q no haya nada y sea null se crea un array vacio
 if(agregarCarrito == null){
-  agregarCarrito= []
-  
-}
+  agregarCarrito= []  
+};
 const carro = document.querySelector("#carro");
 carro.textContent = agregarCarrito.length;
-
 
 // cuando se hace click en cargar carrito, se captura el id del producto, y se lo pasa a la funcion agregaracarrito
 cargarCarrito.addEventListener('click', ()=> {
     const idDescripcion = document.querySelector("#idDescripcion");  
     agregarACarrito(parseInt(idDescripcion.innerText))
     });
-
-
 
  //Por medio del id , se busca en el arrayMenu, y se instancia un objeto, y el metodo agregarCarrito
  function agregarACarrito(id) {
@@ -36,7 +32,7 @@ cargarCarrito.addEventListener('click', ()=> {
         plato.agregarCarrito(); 
            
       });  
-  }
+  };
 
    //Evento que se dispara al hacer click en el boton de carrito para que se muestre
    btnMostrarCarrito.addEventListener('click', ()=>{
@@ -48,8 +44,7 @@ cargarCarrito.addEventListener('click', ()=> {
     direccion.value= ''
     // Se llama a lafuncion para mostrar el carrito
     muestraCarrito()
-  })
-
+  });
 
   function muestraCarrito() {
     //si el carrito esta vacio se desabilita el boton de hacer el pedido
@@ -65,9 +60,9 @@ cargarCarrito.addEventListener('click', ()=> {
       const menu = new Comida(plato);
       suma = suma + menu.precio * menu.cantidad;
       menu.mostrarCarrito();
-    }
+    };
     total.textContent = "TOTAL $" + suma;    
-  }
+  };
   // Funcion para eliminar productos del carrito, se le pasa el id y la cantidad y va eliminando de a uno
   function eliminarDelCarrito(id, cantidad) {    
     if(cantidad > 1){
@@ -80,7 +75,7 @@ cargarCarrito.addEventListener('click', ()=> {
       localStorage.setItem('lista',JSON.stringify(agregarCarrito))
       muestraCarrito();
       carro.textContent = agregarCarrito.length;
-    } 
+    };
     //Mensaje de alerta mediante la libreria Toastify
     Toastify({
       text: "Producto eliminado",
@@ -91,4 +86,4 @@ cargarCarrito.addEventListener('click', ()=> {
         background: "linear-gradient(to right, #ff4949, #cf0707",
       },   
     }).showToast();   
-  }
+  };

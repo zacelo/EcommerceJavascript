@@ -195,12 +195,14 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav {
+  
   padding-left: 18%;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
   color: #ffffff;
+  
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -515,6 +517,7 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -737,7 +740,7 @@ a:focus {
 .book_section .form_container .nice-select .current {
   font-size: 16px;
 }
-.cerrar{
+.borrarComentarios{
   margin-top: 15px;
   border: none;
   text-transform: uppercase;

@@ -12,7 +12,7 @@ class Comida {
       this.descripcion = plato.descripcion;
       this.cantidad = plato.cantidad;
       this.categoria = plato.categoria;
-    }
+    };
     //Metodo para cuando carga la pagina, se muestren los productos
     mostrar() {      
       const rowMostrar = document.createElement("div");
@@ -36,8 +36,8 @@ class Comida {
         const verMas = document.getElementById('boton'+this.id)
         verMas.addEventListener('click', ()=>{
         mostrarDescripcion(this.id);
-        }) 
-    }
+        });
+    };
     //Metodo para ver mas sobre el producto
   verDescripcion() {
     const rowDescripcion = document.createElement("div");
@@ -57,7 +57,7 @@ class Comida {
                                           <p id="cantidadDescripcion" hidden class="lead fs-4 ">${this.cantidad}</p>                                                
                                     </div>
                                    `;
-  }
+  };
 
   //Metodo para agregar al carrito
   agregarCarrito() {    
@@ -81,10 +81,8 @@ class Comida {
   } else {
     existe.cantidad += parseInt(cantidadItems.innerText)
   }
-  localStorage.setItem('lista',JSON.stringify(agregarCarrito))
-
-  
-}
+  localStorage.setItem('lista',JSON.stringify(agregarCarrito));  
+};
 //Metodo para mostrar carrito
 mostrarCarrito() {
   const rowCarrito = document.createElement("div");
@@ -99,15 +97,14 @@ mostrarCarrito() {
                                  </div>
                                  <div class="col-1">
                                     <i class="bi bi-trash rounded-3  text-danger  btn fs-1 "id="${this.id}")></i>                                                         
-                                  </div>  
-                         `;
+                                  </div>`;
   verCarrito.appendChild(rowCarrito);
   const eliminar = document.getElementById(this.id);
   eliminar.addEventListener('click', ()=>{      
   eliminarDelCarrito(this.id,this.cantidad)
-  })   
-}  
-}
+  }); 
+};  
+};
 
 
 

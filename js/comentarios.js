@@ -2,7 +2,7 @@
 
 const formComentario = document.getElementById('formComentario');
 const testimonios    = document.querySelector('.testimonios') ;
-const cerrar         = document.querySelector('.cerrar')
+const borrarComentarios         = document.querySelector('.borrarComentarios')
 // array con comentarios predefinidos
 const arrayComentarios =()=>{
   let comentarios =[{nombre:"Juan Perez"        ,comentario:"Impresionante, me encanto la milanesa napolitana, con papas fritas naturales, muy bueno sigan asi"                     , estrellas:"5" ,fecha:"3/1/2022"},
@@ -13,13 +13,10 @@ const arrayComentarios =()=>{
                     {nombre:"Victoria Diaz"     ,comentario:"Muy rico todo 100% recomendable"                                                                                        , estrellas:"5" ,fecha:"12/9/2021"}];
 
   return comentarios                  
-}
-
+};
  
-// en caso de haber comentarios en el localstorage, se los asigna a la variable comentarios LocalStorage
+// en caso de haber comentarios en el localstorage, se los asigna a la variable comentariosLocalStorage
 let comentariosLocalStorage = JSON.parse(localStorage.getItem("comentario"));
-
-// si la variable comentariosLocalStorage o esta vacia la concatena con el array comentarios
    
 // funcion para cargar los comentarios             
 function cargaTestimonios(){
@@ -28,17 +25,15 @@ function cargaTestimonios(){
       comentarios = comentariosLocalStorage.concat(arrayComentarios());  
     }else{
       comentarios = arrayComentarios()
-    }             
+    };            
     for(let i = 0;i < 6 ; i++){
         let puntos = comentarios[i].estrellas       
         let estrella = "";
         for(let i = 1;i<= parseInt(puntos);i++){
             estrella += " <i class='bi bi-star-fill text-warning'></i>"
-        }  
-      
+        };        
         const divTestimonio = document.createElement("div");
-        divTestimonio.classList.add("col-12","col-md-6"); 
-            
+        divTestimonio.classList.add("col-12","col-md-6");             
         divTestimonio.innerHTML = `<div class="item">
                                         <div class="box">
                                             <div class="detail-box ">                                                
@@ -51,18 +46,15 @@ function cargaTestimonios(){
                                         </div>
                                     </div>` 
       testimonios.appendChild(divTestimonio); 
-    }  
+    };  
 };
-cargaTestimonios()
-
+cargaTestimonios();
 
 formComentario.addEventListener('submit', (e)=>{
     e.preventDefault() 
-    let comentarios =  arrayComentarios() 
-    console.log(comentarios)
+    let comentarios =  arrayComentarios()    
     let datosForm = new FormData(e.target); 
-    let comentarioNuevo = JSON.parse(localStorage.getItem("comentario"));
-  
+    let comentarioNuevo = JSON.parse(localStorage.getItem("comentario"));  
     const fecha = new Date();  
 
     if(comentarioNuevo == null){
@@ -70,18 +62,16 @@ formComentario.addEventListener('submit', (e)=>{
         comentarios = comentarioNuevo.concat(comentarios);        
         localStorage.setItem('comentario',JSON.stringify(comentarioNuevo))
         comentariosLocalStorage = JSON.parse(localStorage.getItem("comentario"));     
-    } else{ 
-         
+    } else{          
         let comentario = [{nombre:datosForm.get('nombre'),comentario:datosForm.get('comentario'),estrellas:datosForm.get('estrellas'),fecha:fecha.toLocaleDateString()}]
        
         comentarioNuevo= comentario.concat(comentarioNuevo)
         console.log(comentarioNuevo)
-        comentarios = comentarioNuevo.concat(comentarios);
-       
-        localStorage.setItem('comentario',JSON.stringify(comentarioNuevo))
+        comentarios = comentarioNuevo.concat(comentarios);       
+        localStorage.setItem('comentario',JSON.stringify(comentarioNuevo));
         comentariosLocalStorage = JSON.parse(localStorage.getItem("comentario"));
-    }      
-    testimonios.innerHTML=""
+    } ;     
+    testimonios.innerHTML="";
     Toastify({
         text: "Comentario agregado",
         duration: 1500,  
@@ -91,11 +81,11 @@ formComentario.addEventListener('submit', (e)=>{
           background: "linear-gradient(to right, #4ad32f, #037030",
         },   
       }).showToast();
-    cargaTestimonios()
-    formComentario.reset()
+    cargaTestimonios();
+    formComentario.reset();
   });  
   
-  cerrar.addEventListener('click', ()=>{
+  borrarComentarios.addEventListener('click', ()=>{
     localStorage.removeItem('comentario');
     window.location.reload();
   })

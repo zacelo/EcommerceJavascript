@@ -1,4 +1,6 @@
 'use strict'
+// Coordenadas es un parrafo que esta oculto donde se va a guardar la geolocalizacion
+const  coordenadas     = document.getElementById('coordenadas');
 //Funcion permite obtener la ubicacion del usuario, siempre y cuando este lo autorice
 const geolocalizacion = ()=>{
     // chequea si el navegador cuenta con geolocalizacion    
@@ -17,7 +19,6 @@ const geolocalizacion = ()=>{
     function noPermitido (error){ 
        //en caso de que el usuario no permita dar la ubicacion se guarda en el parrafo Ubicacion denegada 
         coordenadas.textContent = 'Ubicación Denegada' 
-  }    
-
+  };
 }
 

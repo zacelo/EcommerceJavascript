@@ -1,8 +1,5 @@
 const filtro = document.querySelectorAll('.filtro'),
-      varios = document.getElementById('varios')
-
-
-
+      varios = document.getElementById('varios');
 
 // Funcion para cargar la pagina con productos desde el json
 function cargarPagina() { 
@@ -18,15 +15,15 @@ function cargarPagina() {
           //se instancia cada objeto(roducto) desde el array desordenado aleatoriamente
           const menu = new Comida(productosRandom[i]);
           menu.mostrar();        
-        } 
-      })  
+        }
+      }); 
   }
  cargarPagina()
 // cada vez que se oprima el boton varios se va a la funcion cargarPagina
  varios.addEventListener('click', ()=>{
   cargarProductos.innerHTML=""
    cargarPagina()
- })
+ });
 // bucle para filtrar por categoria de productos  
 for (let item of filtro) {
     item.addEventListener('click', (e)=>{
@@ -40,10 +37,18 @@ for (let item of filtro) {
             const menu = new Comida(plato);
             menu.mostrar();
           }
-        }    
-        
-      })  
-    })
+        }       
+      }); 
+    });
    }
    
-  
+  const menuDesplegable = document.getElementById('navbarSupportedContent'),
+              seleccion = document.querySelectorAll('.nav-link'),
+              botonMenu = document.getElementById('botonMenu');
+ 
+for (menu of seleccion){
+    menu.addEventListener('click', ()=>{
+    menuDesplegable.classList.toggle('show')
+    botonMenu.setAttribute('aria-expanded','false')
+  });
+};

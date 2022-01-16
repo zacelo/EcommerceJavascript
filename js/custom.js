@@ -1,39 +1,42 @@
 // to get current year
-function getYear() {
+/* function getYear() {
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
     document.querySelector("#displayYear").innerHTML = currentYear;
 }
-
-getYear();
-
-
+getYear(); */
 // isotope js
+
 $(window).on('load', function () {
     $('.filters_menu li').click(function () {
         $('.filters_menu li').removeClass('active');
         $(this).addClass('active');
-
-        var data = $(this).attr('data-filter');
+        /* var data = $(this).attr('data-filter');
         $grid.isotope({
             filter: data
-        })
+        }) */
     });
-
-    var $grid = $(".grid").isotope({
+    $('.filters_menu2 li').click(function () {
+        $('.filters_menu2 li').removeClass('active');
+        $(this).addClass('active');
+        /* var data = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: data
+        }) */
+    });
+   /*  var $grid = $(".grid").isotope({
         itemSelector: ".all",
         percentPosition: false,
         masonry: {
             columnWidth: ".all"
         }
-    })
+    }) */
 });
 
 // nice select
-$(document).ready(function() {
+/* $(document).ready(function() {
     $('select').niceSelect();
-  });
-
+  }); */
 /** google_map js **/
 /* function myMap() {
     var mapProp = {
@@ -42,7 +45,6 @@ $(document).ready(function() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 } */
-
 // client section owl carousel
 /* $(".client_owl-carousel").owlCarousel({
     loop: true,

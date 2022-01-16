@@ -27,4 +27,4 @@ Además, cuenta con *geolocalización* 🌍 , si el usuario lo permite. Es decir
 - Toastify
 
 ## Autores ✒️
-- Roberto Long
+- Roberto Long - [zacelo](https://github.com/zacelo "zacelo")

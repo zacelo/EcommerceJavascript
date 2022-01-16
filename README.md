@@ -7,6 +7,8 @@ donde solicita la dirección y si tiene alguna observación.<br>
 Al momento de finalizar la compra se enviará el pedido por whatsApp , con todo detallado.<br>
 Además, cuenta con *geolocalización* 🌍 , si el usuario lo permite. Es decir que también enviará un maps con la ubicación real del cliente.
 
+[Ir a la pagina](https://chivos.netlify.app/ "Ir a la pagina")
+
 ## Construido con 🛠️
 
 - Template Bootstrap v4.3.1

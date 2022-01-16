@@ -66,22 +66,20 @@ class Comida {
   });   
   if (existe == undefined) {
     agregarCarrito.push({id: this.id,nombre:this.nombre, categoria: this.categoria, precio: this.precio, imagen: this.imagen, cantidad: this.cantidad});
-
-    Toastify({
-      text: "Producto agregado",
-      duration: 1500,  
-      gravity: "center",
-      position: "right",     
-      style: {
-        background: "linear-gradient(to right, #4ad32f, #037030",
-      },   
-    }).showToast();
-
     carro.textContent = agregarCarrito.length;
   } else {
     existe.cantidad += parseInt(cantidadItems.innerText)
   }
-  localStorage.setItem('lista',JSON.stringify(agregarCarrito));  
+  localStorage.setItem('lista',JSON.stringify(agregarCarrito));
+  Toastify({
+    text: "Producto agregado",
+    duration: 1500,  
+    gravity: "center",
+    position: "right",     
+    style: {
+      background: "linear-gradient(to right, #4ad32f, #037030",
+    },   
+  }).showToast();  
 };
 //Metodo para mostrar carrito
 mostrarCarrito() {

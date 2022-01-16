@@ -14,6 +14,7 @@ Además, cuenta con *geolocalización* 🌍 , si el usuario lo permite. Es decir
 - Template Bootstrap v4.3.1
 - HTML5
 - CSS3
+- SASS
 - 100% responsive
 - JavaScript
 - Google map

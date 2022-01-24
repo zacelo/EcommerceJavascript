@@ -5,7 +5,8 @@
 donde te muestras los productos seleccionados, la cantidad, el precio por unidad y por la cantidad seleccionada, y un pequeño formulario, 
 donde solicita la dirección y si tiene alguna observación.<br> 
 &nbsp;&nbsp;&nbsp;&nbsp;Al momento de finalizar la compra se enviará el pedido por whatsApp , con todo detallado.<br>
-Además, cuenta con ***geolocalización*** 🌍 , si el usuario lo permite. Es decir que también enviará un maps con la ubicación real del cliente.<br></br>
+Además, cuenta con ***geolocalización*** 🌍 , si el usuario lo permite. Es decir que también enviará un maps con la ubicación real del cliente.<br><br>
+Fecha de finalización del proyecto 16/01/2022.<br><br>
 
 ![](https://github.com/zacelo/EcommerceJavascript/raw/main/imagenes/captura1.jpg)
 

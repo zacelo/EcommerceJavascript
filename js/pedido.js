@@ -13,7 +13,7 @@ pedido.addEventListener('click',()=>{
       sumar += i.precio * i.cantidad
       ped += '%0A'+i.cantidad +' - ' +i.nombre     
     }    
-    pedido.href = `https://wa.me/59897356576/?text=*PEDIDO DESDE WEB*
+    pedido.href = `https://wa.me/59894762076/?text=*PEDIDO DESDE WEB*
                           ${ped}
                           %0A *OBSERVACIONES:*
                           %0A${observaciones.value}
